@@ -1,0 +1,23 @@
+name: "my-hello-action"
+
+description: "say hello with github actions"
+
+inputs:
+  firstGreeting:
+    description: "first greeting"
+    required: true
+    default: "RN"
+  
+  secondGreeting:
+    description: "second greeting"
+    required: true
+    default: "SP"
+  
+  thirdGreeting:
+    description: "third greeting"
+    required: false
+    default: "DN"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
